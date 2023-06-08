@@ -1,6 +1,6 @@
 package org.learning.java;
 
-public class Eagle extends Animal{
+public class Eagle extends Animal implements Fly{
     public Eagle(String name) {
         super(name);
     }
@@ -14,5 +14,11 @@ public class Eagle extends Animal{
     public void eat() {
         System.out.println("bird");
 
-    }}
+    }
+    @Override
+    public void fly(String fling) {
+        System.out.println(fling);
+
+    }
+}
 
